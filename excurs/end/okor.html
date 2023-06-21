@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Виртуальная Экскурсия</title>
+		<link rel="stylesheet" href="styles.css">
+		<link rel="stylesheet" href="./photo-sphere-viewer/core/index.css" />
+		<link rel="stylesheet" href="./photo-sphere-viewer/markers-plugin/index.css" />
+		<link rel="stylesheet" href="./photo-sphere-viewer/virtual-tour-plugin/index.css" />
+		<link rel="stylesheet" href="./photo-sphere-viewer/gallery-plugin/index.css" />
+		<script src="./three/build/three.min.js"></script>
+		<script src="./photo-sphere-viewer/core/index.js"></script>
+		<script src="./photo-sphere-viewer/virtual-tour-plugin/index.js"></script>
+		<script src="./photo-sphere-viewer/markers-plugin/index.js"></script>
+		<script src="./photo-sphere-viewer/gallery-plugin/index.js"></script>
+		<link rel="stylesheet" href="../../style.css">
+	</head>
+	<body>
+		<div id="mainPan">
+		<div id="topPan">
+			<a href="../../index.html"><img src="../../images/logo.gif" alt="Aquatic" width="136" height="31" border="0"  class="logo" title="OKOP"/></a> 
+			<p class="caption" style="position: absolute; left: 244px; top: 46px; height: 31px; width: 286px; font-size: 14px;">
+			&#1055;&#1088;&#1086;&#1077;&#1082;&#1090;&#1085;&#1086;-&#1080;&#1079;&#1099;&#1089;&#1082;&#1072;&#1090;&#1077;&#1083;&#1100;&#1089;&#1082;&#1072;&#1103; &#1086;&#1088;&#1075;&#1072;&#1085;&#1080;&#1079;&#1072;&#1094;&#1080;&#1103;</p>
+			<div id="topcontactPan" style="position: absolute; left: 754px; top: 8px; width: 156px">
+			<p><b> &#1058;&#1077;&#1083;&#1077;&#1092;&#1086;&#1085;</b> (8172)51-21-22</p>
+			<p><strong>&#1060;&#1072;&#1082;&#1089;</strong>&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;(8172)51-21-23</p>
+			</div>
+			<div id="topcontactPan2" style="position: absolute; left: -9px; top: 529px; width: 55px">
+				<p><img src="../../images/topbg2.jpg" width="62" height="52" /></p>
+		</div>
+		</div>
+		<div id="bodyPan" style="display: flex; justify-content: space-between;">
+			<div id="leftPan" style="width: 22%">
+				<ul>
+					<li></li>
+					<li><a href="../../index.html">&#1043;&#1083;&#1072;&#1074;&#1085;&#1072;&#1103;</a></li>
+						<li><a href="../../CMK.html">&#1057;&#1052;&#1050;</a></li>
+						<li><a href="../../lic.html">&#1051;&#1080;&#1094;&#1077;&#1085;&#1079;&#1080;&#1080;</a></li>
+						<li><a href="../../sert.html">&#1057;&#1074;&#1080;&#1076;&#1077;&#1090;&#1077;&#1083;&#1100;&#1089;&#1090;&#1074;&#1072; (&#1057;&#1056;&#1054;)</a></li>
+						<li><a href="../../proekt.html">&#1055;&#1088;&#1086;&#1077;&#1082;&#1090;&#1099;</a></li>
+						<li><a href="../../oborud.html">&#1058;&#1077;&#1093;&#1085;&#1080;&#1095;&#1077;&#1089;&#1082;&#1072;&#1103;  &#1086;&#1086;&#1089;&#1085;&#1072;&#1097;&#1077;&#1085;&#1085;&#1086;&#1089;&#1090;&#1100;</a></li>
+						<li></li>
+						<li><a href="../../klient.html">&#1050;&#1083;&#1080;&#1077;&#1085;&#1090;&#1099; &#1080; &#1087;&#1072;&#1088;&#1090;&#1085;&#1077;&#1088;&#1099;</a></li>
+						<li><a href="../../foto.html">&#1060;&#1086;&#1090;&#1086;&#1075;&#1072;&#1083;&#1077;&#1088;&#1077;&#1103;</a></li>
+						<!--<li><a href="vacansy.html">&#1042;&#1072;&#1082;&#1072;&#1085;&#1089;&#1080;&#1080;</a><a href="kontact.html">&#1050;&#1086;&#1085;&#1090;&#1072;&#1082;&#1090;&#1099;</a></li>-->
+						<li></li>
+						<li><a href="../../mesto.html">&#1052;&#1077;&#1089;&#1090;&#1086; &#1088;&#1072;&#1089;&#1087;&#1086;&#1083;&#1086;&#1078;&#1077;&#1085;&#1080;&#1103;</a></li>
+						<li><a href="./okor.html">&#1042;&#1080;&#1088;&#1090&#1091;&#1072;&#1083;&#1100;&#1085;&#1072;&#1103; &#1101;&#1082;&#1089;&#1082;&#1091;&#1088;&#1089;&#1080;&#1103;</a>  
+					</ul>
+			</div>
+		
+			<div class="new-pan" style="width: 78%; display:flex; flex-direction: column; align-items: center; gap: 2rem;">
+				<p class="MsoNormal" style="text-align: center;  font-size: 22px; color: #F00;">Виртуальная экскурсия</p>
+				
+				<div id="viewer" style="width: 80%; height: 450px;"></div>
+					
+				
+			</div>
+		</div>
+	 </div>
+	 <div id="footermainPan" style="position: absolute; bottom: 0; left:0; right: 0;">
+		<div id="footerPan">
+	   <ul>
+		 <li><span style="background-color: #EBF8F7; background-position: 0% 0%">
+		 <a href="index.html">&#1043;&#1083;&#1072;&#1074;&#1085;&#1072;&#1103;</a></span>| </li>
+		 <li><span style="background-color: #EBF8F7"><a href="CMK.html">&#1057;&#1052;&#1050;</a></span>|
+		 <li><span style="background-color: #EBF8F7"><a href="lic.html">&#1051;&#1080;&#1094;&#1077;&#1085;&#1079;&#1080;&#1080;</a></span>|
+		 <li><span style="background-color: #EBF8F7"><a href="sert.html">&#1057;&#1074;&#1080;&#1076;&#1077;&#1090;&#1077;&#1083;&#1100;&#1089;&#1090;&#1074;&#1072;</a></span>|
+		 <a href="oborud.html">&#1058;&#1077;&#1093;&#1085;&#1080;&#1095;&#1077;&#1089;&#1082;&#1072;&#1103; &#1086;&#1089;&#1085;&#1072;&#1097;&#1077;&#1085;&#1085;&#1086;&#1089;&#1090;&#1100;</a>| </li>
+		 
+	   <li><span style="background-color: #EBF8F7; background-position: 0% 0%">
+	   <a href="klient.html">&#1050;&#1083;&#1080;&#1077;&#1085;&#1090;&#1099; &#1080; &#1087;&#1072;&#1088;&#1090;&#1085;&#1077;&#1088;&#1099;</a></span>| </li>
+		 
+		 <li></li>
+		 <li><span style="background-color: #EBF8F7; background-position: 0% 0%">
+		 <a href="kontact.html">&#1050;&#1086;&#1085;&#1090;&#1072;&#1082;&#1090;&#1099;</a></span> </li>
+		 <li></li>
+	   </ul>
+		 <p class="copyright"><span lang="ru"> &#1042;&#1086;&#1083;&#1086;&#1075;&#1076;&#1072; 2023</span></p>
+   </div>
+   <script src="./index.js"></script>
+	</body>
+</html>
